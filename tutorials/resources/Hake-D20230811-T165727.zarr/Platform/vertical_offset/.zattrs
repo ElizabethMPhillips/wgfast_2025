@@ -1,0 +1,7 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time2"
+    ],
+    "long_name": "Platform vertical offset from nominal water level",
+    "units": "m"
+}

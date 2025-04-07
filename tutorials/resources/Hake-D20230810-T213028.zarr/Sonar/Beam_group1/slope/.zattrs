@@ -1,0 +1,7 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "channel",
+        "ping_time"
+    ],
+    "long_name": "Hann window slope parameter for transmit signal"
+}

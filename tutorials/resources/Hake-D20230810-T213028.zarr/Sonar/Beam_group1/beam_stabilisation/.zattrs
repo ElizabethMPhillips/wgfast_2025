@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [],
+    "flag_meanings": [
+        "not stabilised",
+        "stabilised"
+    ],
+    "flag_values": [
+        0,
+        1
+    ],
+    "long_name": "Beam stabilisation applied (or not)"
+}

@@ -1,0 +1,6 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "cal_channel_id"
+    ],
+    "long_name": "ID of channels containing broadband calibration information"
+}

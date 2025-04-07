@@ -1,0 +1,3161 @@
+{
+    "metadata": {
+        ".zattrs": {
+            "conventions": "CF-1.7, SONAR-netCDF4-1.0, ACDD-1.3",
+            "date_created": "2023-08-11T16:57:27Z",
+            "keywords": "EK80",
+            "processing_level": "Level 1A",
+            "processing_level_url": "https://echopype.readthedocs.io/en/stable/processing-levels.html",
+            "sonar_convention_authority": "ICES",
+            "sonar_convention_name": "SONAR-netCDF4",
+            "sonar_convention_version": "1.0",
+            "summary": "",
+            "title": ""
+        },
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        "Environment/.zattrs": {},
+        "Environment/.zgroup": {
+            "zarr_format": 2
+        },
+        "Environment/acidity/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Environment/acidity/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time1"
+            ]
+        },
+        "Environment/depth/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Environment/depth/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time1"
+            ]
+        },
+        "Environment/salinity/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Environment/salinity/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time1"
+            ]
+        },
+        "Environment/sound_speed_indicative/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Environment/sound_speed_indicative/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time1"
+            ]
+        },
+        "Environment/sound_velocity_profile/.zarray": {
+            "chunks": [
+                1,
+                2
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                2
+            ],
+            "zarr_format": 2
+        },
+        "Environment/sound_velocity_profile/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time1",
+                "sound_velocity_profile_depth"
+            ],
+            "comment": "parsed from raw data files as (depth, sound_speed) value pairs",
+            "long_name": "sound velocity profile",
+            "standard_name": "speed_of_sound_in_sea_water",
+            "units": "m/s",
+            "valid_min": 0.0
+        },
+        "Environment/sound_velocity_profile_depth/.zarray": {
+            "chunks": [
+                2
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2
+            ],
+            "zarr_format": 2
+        },
+        "Environment/sound_velocity_profile_depth/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "sound_velocity_profile_depth"
+            ],
+            "axis": "Z",
+            "positive": "down",
+            "standard_name": "depth",
+            "units": "m",
+            "valid_min": 0.0
+        },
+        "Environment/sound_velocity_source/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U10",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Environment/sound_velocity_source/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time1"
+            ]
+        },
+        "Environment/temperature/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Environment/temperature/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time1"
+            ]
+        },
+        "Environment/time1/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Environment/time1/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time1"
+            ],
+            "axis": "T",
+            "calendar": "gregorian",
+            "comment": "Time coordinate corresponding to environmental variables. Note that Platform.time3 is the same as Environment.time1.",
+            "long_name": "Timestamps for NMEA position datagrams",
+            "standard_name": "time",
+            "units": "nanoseconds since 1970-01-01T00:00:00+00:00"
+        },
+        "Environment/transducer_name/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U7",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Environment/transducer_name/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time1"
+            ]
+        },
+        "Environment/transducer_sound_speed/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Environment/transducer_sound_speed/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time1"
+            ]
+        },
+        "Platform/.zattrs": {
+            "platform_code_ICES": "",
+            "platform_name": "",
+            "platform_type": ""
+        },
+        "Platform/.zgroup": {
+            "zarr_format": 2
+        },
+        "Platform/MRU_offset_x/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Platform/MRU_offset_x/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "long_name": "Distance along the x-axis from the platform coordinate system origin to the motion reference unit sensor origin",
+            "units": "m"
+        },
+        "Platform/MRU_offset_y/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Platform/MRU_offset_y/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "long_name": "Distance along the y-axis from the platform coordinate system origin to the motion reference unit sensor origin",
+            "units": "m"
+        },
+        "Platform/MRU_offset_z/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Platform/MRU_offset_z/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "long_name": "Distance along the z-axis from the platform coordinate system origin to the motion reference unit sensor origin",
+            "units": "m"
+        },
+        "Platform/MRU_rotation_x/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Platform/MRU_rotation_x/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "long_name": "Extrinsic rotation about the x-axis from the platform to MRU coordinate systems",
+            "units": "arc_degree",
+            "valid_range": "(\u00e2\u20ac\u201c180.0, 180.0)"
+        },
+        "Platform/MRU_rotation_y/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Platform/MRU_rotation_y/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "long_name": "Extrinsic rotation about the y-axis from the platform to MRU coordinate systems",
+            "units": "arc_degree",
+            "valid_range": "(\u00e2\u20ac\u201c180.0, 180.0)"
+        },
+        "Platform/MRU_rotation_z/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Platform/MRU_rotation_z/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "long_name": "Extrinsic rotation about the z-axis from the platform to MRU coordinate systems",
+            "units": "arc_degree",
+            "valid_range": "(\u00e2\u20ac\u201c180.0, 180.0)"
+        },
+        "Platform/NMEA/.zattrs": {
+            "description": "All NMEA sensor datagrams"
+        },
+        "Platform/NMEA/.zgroup": {
+            "zarr_format": 2
+        },
+        "Platform/NMEA/NMEA_datagram/.zarray": {
+            "chunks": [
+                5479
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U70",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5479
+            ],
+            "zarr_format": 2
+        },
+        "Platform/NMEA/NMEA_datagram/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "nmea_time"
+            ],
+            "long_name": "NMEA datagram"
+        },
+        "Platform/NMEA/channel/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U25",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Platform/NMEA/channel/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "Vendor channel ID"
+        },
+        "Platform/NMEA/nmea_time/.zarray": {
+            "chunks": [
+                5479
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5479
+            ],
+            "zarr_format": 2
+        },
+        "Platform/NMEA/nmea_time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "nmea_time"
+            ],
+            "axis": "T",
+            "calendar": "gregorian",
+            "comment": "Time coordinate corresponding to NMEA sensor data.",
+            "long_name": "Timestamps for NMEA datagrams",
+            "standard_name": "time",
+            "units": "nanoseconds since 1970-01-01T00:00:00+00:00"
+        },
+        "Platform/NMEA/time1/.zarray": {
+            "chunks": [
+                1451
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1451
+            ],
+            "zarr_format": 2
+        },
+        "Platform/NMEA/time1/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time1"
+            ],
+            "axis": "T",
+            "calendar": "gregorian",
+            "comment": "Time coordinate corresponding to NMEA position data.",
+            "long_name": "Timestamps for NMEA datagrams",
+            "standard_name": "time",
+            "units": "nanoseconds since 1970-01-01T00:00:00+00:00"
+        },
+        "Platform/NMEA/time2/.zarray": {
+            "chunks": [
+                1837
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1837
+            ],
+            "zarr_format": 2
+        },
+        "Platform/NMEA/time2/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time2"
+            ],
+            "axis": "T",
+            "calendar": "gregorian",
+            "comment": "Time coordinate corresponding to platform motion and orientation data.",
+            "long_name": "Timestamps for platform motion and orientation data",
+            "standard_name": "time",
+            "units": "nanoseconds since 1970-01-01T00:00:00+00:00"
+        },
+        "Platform/NMEA/time3/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Platform/NMEA/time3/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time3"
+            ],
+            "axis": "T",
+            "calendar": "gregorian",
+            "comment": "Time coordinate corresponding to platform motion and orientation data from the Kongsberg Maritime Binary Datagram.",
+            "long_name": "Timestamps for platform motion and orientation data from the Kongsberg Maritime Binary Datagram",
+            "standard_name": "time",
+            "units": "nanoseconds since 1970-01-01T00:00:00+00:00"
+        },
+        "Platform/channel/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U25",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Platform/channel/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "Vendor channel ID"
+        },
+        "Platform/drop_keel_offset/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Platform/drop_keel_offset/.zattrs": {
+            "_ARRAY_DIMENSIONS": []
+        },
+        "Platform/drop_keel_offset_is_manual/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Platform/drop_keel_offset_is_manual/.zattrs": {
+            "_ARRAY_DIMENSIONS": []
+        },
+        "Platform/frequency_nominal/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Platform/frequency_nominal/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "Transducer frequency",
+            "standard_name": "sound_frequency",
+            "units": "Hz",
+            "valid_min": 0.0
+        },
+        "Platform/heading/.zarray": {
+            "chunks": [
+                1837
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1837
+            ],
+            "zarr_format": 2
+        },
+        "Platform/heading/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time2"
+            ],
+            "long_name": "Platform heading (true)",
+            "standard_name": "platform_orientation",
+            "units": "degrees_north",
+            "valid_max": 360.0,
+            "valid_min": 0.0
+        },
+        "Platform/latitude/.zarray": {
+            "chunks": [
+                1451
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1451
+            ],
+            "zarr_format": 2
+        },
+        "Platform/latitude/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time1"
+            ],
+            "long_name": "Platform latitude",
+            "standard_name": "latitude",
+            "units": "degrees_north",
+            "valid_range": "(-90.0, 90.0)"
+        },
+        "Platform/latitude_mru1/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Platform/latitude_mru1/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time3"
+            ],
+            "comment": "Derived from the Simrad MRU1 Datagrams which are a wrapper of the Kongsberg Maritime Binary Datagrams.",
+            "long_name": "Platform latitude",
+            "standard_name": "latitude",
+            "units": "degrees_north",
+            "valid_range": "(-90.0, 90.0)"
+        },
+        "Platform/longitude/.zarray": {
+            "chunks": [
+                1451
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1451
+            ],
+            "zarr_format": 2
+        },
+        "Platform/longitude/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time1"
+            ],
+            "long_name": "Platform longitude",
+            "standard_name": "longitude",
+            "units": "degrees_east",
+            "valid_range": "(-180.0, 180.0)"
+        },
+        "Platform/longitude_mru1/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Platform/longitude_mru1/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time3"
+            ],
+            "comment": "Derived from the Simrad MRU1 Datagrams which are a wrapper of the Kongsberg Maritime Binary Datagrams.",
+            "long_name": "Platform longitude",
+            "standard_name": "longitude",
+            "units": "degrees_east",
+            "valid_range": "(-180.0, 180.0)"
+        },
+        "Platform/pitch/.zarray": {
+            "chunks": [
+                1837
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1837
+            ],
+            "zarr_format": 2
+        },
+        "Platform/pitch/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time2"
+            ],
+            "long_name": "Platform pitch",
+            "standard_name": "platform_pitch_angle",
+            "units": "arc_degree",
+            "valid_range": "(-90.0, 90.0)"
+        },
+        "Platform/position_offset_x/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Platform/position_offset_x/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "long_name": "Distance along the x-axis from the platform coordinate system origin to the latitude/longitude sensor origin",
+            "units": "m"
+        },
+        "Platform/position_offset_y/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Platform/position_offset_y/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "long_name": "Distance along the y-axis from the platform coordinate system origin to the latitude/longitude sensor origin",
+            "units": "m"
+        },
+        "Platform/position_offset_z/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Platform/position_offset_z/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "long_name": "Distance along the z-axis from the platform coordinate system origin to the latitude/longitude sensor origin",
+            "units": "m"
+        },
+        "Platform/roll/.zarray": {
+            "chunks": [
+                1837
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1837
+            ],
+            "zarr_format": 2
+        },
+        "Platform/roll/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time2"
+            ],
+            "long_name": "Platform roll",
+            "standard_name": "platform_roll_angle",
+            "units": "arc_degree",
+            "valid_range": "(-90.0, 90.0)"
+        },
+        "Platform/sentence_type/.zarray": {
+            "chunks": [
+                1451
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U3",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1451
+            ],
+            "zarr_format": 2
+        },
+        "Platform/sentence_type/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time1"
+            ],
+            "long_name": "NMEA sentence type"
+        },
+        "Platform/time1/.zarray": {
+            "chunks": [
+                1451
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1451
+            ],
+            "zarr_format": 2
+        },
+        "Platform/time1/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time1"
+            ],
+            "axis": "T",
+            "calendar": "gregorian",
+            "comment": "Time coordinate corresponding to NMEA position data.",
+            "long_name": "Timestamps for NMEA datagrams",
+            "standard_name": "time",
+            "units": "nanoseconds since 1970-01-01T00:00:00+00:00"
+        },
+        "Platform/time2/.zarray": {
+            "chunks": [
+                1837
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1837
+            ],
+            "zarr_format": 2
+        },
+        "Platform/time2/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time2"
+            ],
+            "axis": "T",
+            "calendar": "gregorian",
+            "comment": "Time coordinate corresponding to platform motion and orientation data.",
+            "long_name": "Timestamps for platform motion and orientation data",
+            "standard_name": "time",
+            "units": "nanoseconds since 1970-01-01T00:00:00+00:00"
+        },
+        "Platform/time3/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Platform/time3/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time3"
+            ],
+            "axis": "T",
+            "calendar": "gregorian",
+            "comment": "Time coordinate corresponding to platform motion and orientation data from the Kongsberg Maritime Binary Datagram.",
+            "long_name": "Timestamps for platform motion and orientation data from the Kongsberg Maritime Binary Datagram",
+            "standard_name": "time",
+            "units": "nanoseconds since 1970-01-01T00:00:00+00:00"
+        },
+        "Platform/transducer_offset_x/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Platform/transducer_offset_x/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "x-axis distance from the platform coordinate system origin to the sonar transducer",
+            "units": "m"
+        },
+        "Platform/transducer_offset_y/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Platform/transducer_offset_y/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "y-axis distance from the platform coordinate system origin to the sonar transducer",
+            "units": "m"
+        },
+        "Platform/transducer_offset_z/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Platform/transducer_offset_z/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "z-axis distance from the platform coordinate system origin to the sonar transducer",
+            "units": "m"
+        },
+        "Platform/vertical_offset/.zarray": {
+            "chunks": [
+                1837
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1837
+            ],
+            "zarr_format": 2
+        },
+        "Platform/vertical_offset/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time2"
+            ],
+            "long_name": "Platform vertical offset from nominal water level",
+            "units": "m"
+        },
+        "Platform/water_level/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Platform/water_level/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "long_name": "Distance from the platform coordinate system origin to the nominal water level along the z-axis",
+            "units": "m"
+        },
+        "Platform/water_level_draft_is_manual/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Platform/water_level_draft_is_manual/.zattrs": {
+            "_ARRAY_DIMENSIONS": []
+        },
+        "Provenance/.zattrs": {
+            "conversion_software_name": "echopype",
+            "conversion_software_version": "0.10.1",
+            "conversion_time": "2025-04-07T15:59:44Z"
+        },
+        "Provenance/.zgroup": {
+            "zarr_format": 2
+        },
+        "Provenance/filenames/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Provenance/filenames/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "filenames"
+            ],
+            "long_name": "Index for data and metadata source filenames"
+        },
+        "Provenance/source_filenames/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U82",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Provenance/source_filenames/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "filenames"
+            ],
+            "long_name": "Source filenames"
+        },
+        "Sonar/.zattrs": {
+            "sonar_manufacturer": "Simrad",
+            "sonar_model": "EK80",
+            "sonar_serial_number": "",
+            "sonar_software_name": "EK80",
+            "sonar_software_version": "21.15.2.0",
+            "sonar_type": "echosounder"
+        },
+        "Sonar/.zgroup": {
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/.zattrs": {
+            "beam_mode": "vertical",
+            "conversion_equation_t": "type_3"
+        },
+        "Sonar/Beam_group1/.zgroup": {
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/angle_alongship/.zarray": {
+            "chunks": [
+                5,
+                213,
+                23474
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                213,
+                36198
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/angle_alongship/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "ping_time",
+                "range_sample"
+            ],
+            "comment": "Introduced in echopype for Simrad echosounders. The alongship angle corresponds to the minor angle in SONAR-netCDF4 vers 2. ",
+            "long_name": "electrical alongship angle"
+        },
+        "Sonar/Beam_group1/angle_athwartship/.zarray": {
+            "chunks": [
+                5,
+                213,
+                23474
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                213,
+                36198
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/angle_athwartship/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "ping_time",
+                "range_sample"
+            ],
+            "comment": "Introduced in echopype for Simrad echosounders. The athwartship angle corresponds to the major angle in SONAR-netCDF4 vers 2. ",
+            "long_name": "electrical athwartship angle"
+        },
+        "Sonar/Beam_group1/angle_offset_alongship/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/angle_offset_alongship/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "comment": "Introduced in echopype for Simrad echosounders. The alongship angle corresponds to the minor angle in SONAR-netCDF4 vers 2. ",
+            "long_name": "electrical alongship angle offset of the transducer"
+        },
+        "Sonar/Beam_group1/angle_offset_athwartship/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/angle_offset_athwartship/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "comment": "Introduced in echopype for Simrad echosounders. The athwartship angle corresponds to the major angle in SONAR-netCDF4 vers 2. ",
+            "long_name": "electrical athwartship angle offset of the transducer"
+        },
+        "Sonar/Beam_group1/angle_sensitivity_alongship/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/angle_sensitivity_alongship/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "comment": "Introduced in echopype for Simrad echosounders. The alongship angle corresponds to the minor angle in SONAR-netCDF4 vers 2. ",
+            "long_name": "alongship angle sensitivity of the transducer"
+        },
+        "Sonar/Beam_group1/angle_sensitivity_athwartship/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/angle_sensitivity_athwartship/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "comment": "Introduced in echopype for Simrad echosounders. The athwartship angle corresponds to the major angle in SONAR-netCDF4 vers 2. ",
+            "long_name": "athwartship angle sensitivity of the transducer"
+        },
+        "Sonar/Beam_group1/backscatter_r/.zarray": {
+            "chunks": [
+                5,
+                213,
+                23474
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                213,
+                36198
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/backscatter_r/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "ping_time",
+                "range_sample"
+            ],
+            "long_name": "Raw backscatter measurements (real part)",
+            "units": "dB"
+        },
+        "Sonar/Beam_group1/beam_direction_x/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/beam_direction_x/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "x-component of the vector that gives the pointing direction of the beam, in sonar beam coordinate system",
+            "units": "1",
+            "valid_range": [
+                -1.0,
+                1.0
+            ]
+        },
+        "Sonar/Beam_group1/beam_direction_y/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/beam_direction_y/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "y-component of the vector that gives the pointing direction of the beam, in sonar beam coordinate system",
+            "units": "1",
+            "valid_range": [
+                -1.0,
+                1.0
+            ]
+        },
+        "Sonar/Beam_group1/beam_direction_z/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/beam_direction_z/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "z-component of the vector that gives the pointing direction of the beam, in sonar beam coordinate system",
+            "units": "1",
+            "valid_range": [
+                -1.0,
+                1.0
+            ]
+        },
+        "Sonar/Beam_group1/beam_group/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U11",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/beam_group/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "beam_group"
+            ],
+            "long_name": "Beam group name"
+        },
+        "Sonar/Beam_group1/beam_stabilisation/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "|i1",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/beam_stabilisation/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "flag_meanings": [
+                "not stabilised",
+                "stabilised"
+            ],
+            "flag_values": [
+                0,
+                1
+            ],
+            "long_name": "Beam stabilisation applied (or not)"
+        },
+        "Sonar/Beam_group1/beam_type/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/beam_type/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "type of transducer (0-single, 1-split)"
+        },
+        "Sonar/Beam_group1/beamwidth_twoway_alongship/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/beamwidth_twoway_alongship/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "comment": "Introduced in echopype for Simrad echosounders to avoid potential confusion with convention definitions. The alongship angle corresponds to the minor angle in SONAR-netCDF4 vers 2. The convention defines one-way transmit or receive beamwidth (beamwidth_receive_minor and beamwidth_transmit_minor), but Simrad echosounders record two-way beamwidth in the data.",
+            "long_name": "Half power two-way beam width along alongship axis of beam",
+            "units": "arc_degree",
+            "valid_range": [
+                0.0,
+                360.0
+            ]
+        },
+        "Sonar/Beam_group1/beamwidth_twoway_athwartship/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/beamwidth_twoway_athwartship/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "comment": "Introduced in echopype for Simrad echosounders to avoid potential confusion with convention definitions. The athwartship angle corresponds to the major angle in SONAR-netCDF4 vers 2. The convention defines one-way transmit or receive beamwidth (beamwidth_receive_major and beamwidth_transmit_major), but Simrad echosounders record two-way beamwidth in the data.",
+            "long_name": "Half power two-way beam width along athwartship axis of beam",
+            "units": "arc_degree",
+            "valid_range": [
+                0.0,
+                360.0
+            ]
+        },
+        "Sonar/Beam_group1/channel/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U25",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/channel/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "Vendor channel ID"
+        },
+        "Sonar/Beam_group1/channel_all/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U25",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/channel_all/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel_all"
+            ],
+            "long_name": "Vendor channel ID"
+        },
+        "Sonar/Beam_group1/channel_mode/.zarray": {
+            "chunks": [
+                5,
+                213
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                213
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/channel_mode/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "ping_time"
+            ],
+            "flag_meanings": [
+                "Active",
+                "Unknown"
+            ],
+            "flag_values": [
+                0,
+                1
+            ],
+            "long_name": "Transceiver mode"
+        },
+        "Sonar/Beam_group1/equivalent_beam_angle/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/equivalent_beam_angle/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "Equivalent beam angle",
+            "units": "sr",
+            "valid_range": [
+                0.0,
+                12.566370614359172
+            ]
+        },
+        "Sonar/Beam_group1/frequency_nominal/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/frequency_nominal/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "Transducer frequency",
+            "standard_name": "sound_frequency",
+            "units": "Hz",
+            "valid_min": 0.0
+        },
+        "Sonar/Beam_group1/non_quantitative_processing/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<i2",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/non_quantitative_processing/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "flag_meanings": [
+                "None"
+            ],
+            "flag_values": [
+                0
+            ],
+            "long_name": "Presence or not of non-quantitative processing applied to the backscattering data (sonar specific)"
+        },
+        "Sonar/Beam_group1/ping_time/.zarray": {
+            "chunks": [
+                213
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                213
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/ping_time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "ping_time"
+            ],
+            "axis": "T",
+            "calendar": "gregorian",
+            "long_name": "Timestamp of each ping",
+            "standard_name": "time",
+            "units": "nanoseconds since 1970-01-01T00:00:00+00:00"
+        },
+        "Sonar/Beam_group1/range_sample/.zarray": {
+            "chunks": [
+                36198
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                36198
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/range_sample/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "range_sample"
+            ],
+            "long_name": "Along-range sample number, base 0"
+        },
+        "Sonar/Beam_group1/sample_interval/.zarray": {
+            "chunks": [
+                5,
+                213
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                213
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/sample_interval/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "ping_time"
+            ],
+            "long_name": "Interval between recorded raw data samples",
+            "units": "s",
+            "valid_min": 0.0
+        },
+        "Sonar/Beam_group1/sample_time_offset/.zarray": {
+            "chunks": [
+                5,
+                213
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                213
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/sample_time_offset/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "ping_time"
+            ],
+            "long_name": "Time offset that is subtracted from the timestamp of each sample",
+            "units": "s"
+        },
+        "Sonar/Beam_group1/slope/.zarray": {
+            "chunks": [
+                5,
+                213
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                213
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/slope/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "ping_time"
+            ],
+            "long_name": "Hann window slope parameter for transmit signal"
+        },
+        "Sonar/Beam_group1/transceiver_software_version/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/transceiver_software_version/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ]
+        },
+        "Sonar/Beam_group1/transmit_duration_nominal/.zarray": {
+            "chunks": [
+                5,
+                213
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                213
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/transmit_duration_nominal/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "ping_time"
+            ],
+            "long_name": "Nominal bandwidth of transmitted pulse",
+            "units": "s",
+            "valid_min": 0.0
+        },
+        "Sonar/Beam_group1/transmit_frequency_start/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/transmit_frequency_start/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "Start frequency in transmitted pulse",
+            "standard_name": "sound_frequency",
+            "units": "Hz",
+            "valid_min": 0.0
+        },
+        "Sonar/Beam_group1/transmit_frequency_stop/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/transmit_frequency_stop/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "Stop frequency in transmitted pulse",
+            "standard_name": "sound_frequency",
+            "units": "Hz",
+            "valid_min": 0.0
+        },
+        "Sonar/Beam_group1/transmit_power/.zarray": {
+            "chunks": [
+                5,
+                213
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                213
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/transmit_power/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "ping_time"
+            ],
+            "long_name": "Nominal transmit power",
+            "units": "W",
+            "valid_min": 0.0
+        },
+        "Sonar/Beam_group1/transmit_pulse_i/.zarray": {
+            "chunks": [
+                5,
+                213,
+                148
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                213,
+                148
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/transmit_pulse_i/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "ping_time",
+                "transmit_sample"
+            ],
+            "comment": "Only exist for Simrad EK80 file with RAW4 datagrams",
+            "long_name": "Imaginary part of the transmit pulse",
+            "units": "V"
+        },
+        "Sonar/Beam_group1/transmit_pulse_r/.zarray": {
+            "chunks": [
+                5,
+                213,
+                148
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                213,
+                148
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/transmit_pulse_r/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "ping_time",
+                "transmit_sample"
+            ],
+            "comment": "Only exist for Simrad EK80 file with RAW4 datagrams",
+            "long_name": "Real part of the transmit pulse",
+            "units": "V"
+        },
+        "Sonar/Beam_group1/transmit_sample/.zarray": {
+            "chunks": [
+                148
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                148
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/transmit_sample/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "transmit_sample"
+            ],
+            "comment": "Only exist for Simrad EK80 file with RAW4 datagrams",
+            "long_name": "Transmit pulse sample number, base 0"
+        },
+        "Sonar/Beam_group1/transmit_type/.zarray": {
+            "chunks": [
+                5,
+                213
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U3",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                213
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/Beam_group1/transmit_type/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "ping_time"
+            ],
+            "flag_meanings": [
+                "Continuous Wave \u2013 a pulse nominally of one frequency",
+                "Linear Frequency Modulation \u2013 a pulse which varies from transmit_frequency_start to transmit_frequency_stop in a linear manner over the nominal pulse duration (transmit_duration_nominal)",
+                "Frequency Modulated 'D' - An EK80-specific FM type that is not clearly described"
+            ],
+            "flag_values": [
+                "CW",
+                "LFM",
+                "FMD"
+            ],
+            "long_name": "Type of transmitted pulse"
+        },
+        "Sonar/beam_group/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U11",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/beam_group/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "beam_group"
+            ],
+            "long_name": "Beam group name"
+        },
+        "Sonar/beam_group_descr/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U131",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/beam_group_descr/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "beam_group"
+            ],
+            "long_name": "Beam group description"
+        },
+        "Sonar/channel_all/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U25",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/channel_all/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel_all"
+            ],
+            "long_name": "Vendor channel ID"
+        },
+        "Sonar/frequency_nominal/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/frequency_nominal/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel_all"
+            ],
+            "long_name": "Transducer frequency",
+            "standard_name": "sound_frequency",
+            "units": "Hz",
+            "valid_min": 0.0
+        },
+        "Sonar/transceiver_serial_number/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U6",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/transceiver_serial_number/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel_all"
+            ],
+            "long_name": "Transceiver serial number"
+        },
+        "Sonar/transducer_name/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/transducer_name/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel_all"
+            ],
+            "long_name": "Transducer name"
+        },
+        "Sonar/transducer_serial_number/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U1",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Sonar/transducer_serial_number/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel_all"
+            ],
+            "long_name": "Transducer serial number"
+        },
+        "Vendor_specific/.zattrs": {},
+        "Vendor_specific/.zgroup": {
+            "zarr_format": 2
+        },
+        "Vendor_specific/PC_decimation/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/PC_decimation/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "Pulse compression decimation factor"
+        },
+        "Vendor_specific/PC_filter_i/.zarray": {
+            "chunks": [
+                5,
+                123
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                123
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/PC_filter_i/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "PC_filter_n"
+            ],
+            "long_name": "Pulse compression filter coefficients (imaginary part)"
+        },
+        "Vendor_specific/PC_filter_r/.zarray": {
+            "chunks": [
+                5,
+                123
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                123
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/PC_filter_r/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "PC_filter_n"
+            ],
+            "long_name": "Pulse compression filter coefficients (real part)"
+        },
+        "Vendor_specific/WBT_decimation/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/WBT_decimation/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "Wideband transceiver decimation factor"
+        },
+        "Vendor_specific/WBT_filter_i/.zarray": {
+            "chunks": [
+                5,
+                47
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                47
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/WBT_filter_i/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "WBT_filter_n"
+            ],
+            "long_name": "Wideband transceiver filter coefficients (imaginary part)"
+        },
+        "Vendor_specific/WBT_filter_r/.zarray": {
+            "chunks": [
+                5,
+                47
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                47
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/WBT_filter_r/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "WBT_filter_n"
+            ],
+            "long_name": "Wideband transceiver filter coefficients (real part)"
+        },
+        "Vendor_specific/angle_offset_alongship/.zarray": {
+            "chunks": [
+                3,
+                269
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                3,
+                269
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/angle_offset_alongship/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "cal_channel_id",
+                "cal_frequency"
+            ]
+        },
+        "Vendor_specific/angle_offset_athwartship/.zarray": {
+            "chunks": [
+                3,
+                269
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                3,
+                269
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/angle_offset_athwartship/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "cal_channel_id",
+                "cal_frequency"
+            ]
+        },
+        "Vendor_specific/beamwidth_alongship/.zarray": {
+            "chunks": [
+                3,
+                269
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                3,
+                269
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/beamwidth_alongship/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "cal_channel_id",
+                "cal_frequency"
+            ]
+        },
+        "Vendor_specific/beamwidth_athwartship/.zarray": {
+            "chunks": [
+                3,
+                269
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                3,
+                269
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/beamwidth_athwartship/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "cal_channel_id",
+                "cal_frequency"
+            ]
+        },
+        "Vendor_specific/cal_channel_id/.zarray": {
+            "chunks": [
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U25",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                3
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/cal_channel_id/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "cal_channel_id"
+            ],
+            "long_name": "ID of channels containing broadband calibration information"
+        },
+        "Vendor_specific/cal_frequency/.zarray": {
+            "chunks": [
+                269
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                269
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/cal_frequency/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "cal_frequency"
+            ],
+            "long_name": "Frequency of calibration parameter",
+            "units": "Hz"
+        },
+        "Vendor_specific/channel/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U25",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/channel/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "Vendor channel ID"
+        },
+        "Vendor_specific/config_xml/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<U74340",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "Vendor_specific/config_xml/.zattrs": {
+            "_ARRAY_DIMENSIONS": []
+        },
+        "Vendor_specific/frequency_nominal/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/frequency_nominal/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "Transducer frequency",
+            "standard_name": "sound_frequency",
+            "units": "Hz",
+            "valid_min": 0.0
+        },
+        "Vendor_specific/gain/.zarray": {
+            "chunks": [
+                3,
+                269
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                3,
+                269
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/gain/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "cal_channel_id",
+                "cal_frequency"
+            ]
+        },
+        "Vendor_specific/gain_correction/.zarray": {
+            "chunks": [
+                5,
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/gain_correction/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "pulse_length_bin"
+            ]
+        },
+        "Vendor_specific/impedance_transceiver/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/impedance_transceiver/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "Transceiver impedance",
+            "units": "ohm"
+        },
+        "Vendor_specific/impedance_transducer/.zarray": {
+            "chunks": [
+                3,
+                269
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                3,
+                269
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/impedance_transducer/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "cal_channel_id",
+                "cal_frequency"
+            ]
+        },
+        "Vendor_specific/phase/.zarray": {
+            "chunks": [
+                3,
+                269
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                3,
+                269
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/phase/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "cal_channel_id",
+                "cal_frequency"
+            ]
+        },
+        "Vendor_specific/pulse_length/.zarray": {
+            "chunks": [
+                5,
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/pulse_length/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "pulse_length_bin"
+            ]
+        },
+        "Vendor_specific/pulse_length_bin/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/pulse_length_bin/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "pulse_length_bin"
+            ]
+        },
+        "Vendor_specific/receiver_sampling_frequency/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/receiver_sampling_frequency/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "Receiver sampling frequency",
+            "units": "Hz"
+        },
+        "Vendor_specific/sa_correction/.zarray": {
+            "chunks": [
+                5,
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 3,
+                "cname": "zstd",
+                "id": "blosc",
+                "shuffle": 2
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5,
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/sa_correction/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel",
+                "pulse_length_bin"
+            ]
+        },
+        "Vendor_specific/transceiver_type/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<U3",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "Vendor_specific/transceiver_type/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "channel"
+            ],
+            "long_name": "Transceiver type"
+        }
+    },
+    "zarr_consolidated_format": 1
+}

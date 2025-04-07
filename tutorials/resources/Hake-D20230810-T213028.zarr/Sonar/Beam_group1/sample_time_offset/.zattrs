@@ -1,0 +1,8 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "channel",
+        "ping_time"
+    ],
+    "long_name": "Time offset that is subtracted from the timestamp of each sample",
+    "units": "s"
+}

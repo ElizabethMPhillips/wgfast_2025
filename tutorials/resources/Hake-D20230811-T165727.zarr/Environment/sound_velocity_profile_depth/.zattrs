@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "sound_velocity_profile_depth"
+    ],
+    "axis": "Z",
+    "positive": "down",
+    "standard_name": "depth",
+    "units": "m",
+    "valid_min": 0.0
+}

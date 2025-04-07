@@ -1,0 +1,6 @@
+{
+    "_ARRAY_DIMENSIONS": [],
+    "long_name": "Extrinsic rotation about the y-axis from the platform to MRU coordinate systems",
+    "units": "arc_degree",
+    "valid_range": "(\u00e2\u20ac\u201c180.0, 180.0)"
+}

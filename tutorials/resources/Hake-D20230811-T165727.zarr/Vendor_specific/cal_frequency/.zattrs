@@ -1,0 +1,7 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "cal_frequency"
+    ],
+    "long_name": "Frequency of calibration parameter",
+    "units": "Hz"
+}

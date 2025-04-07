@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [],
+    "flag_meanings": [
+        "None"
+    ],
+    "flag_values": [
+        0
+    ],
+    "long_name": "Presence or not of non-quantitative processing applied to the backscattering data (sonar specific)"
+}
